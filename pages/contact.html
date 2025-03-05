@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Contato</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("2M-OC8Pu0vYxeamlU");
+        })();
+    </script>    
+    <style>
+        #contato {
+            background-color: var(--cor02); 
+            padding: 170px 2em 2em 2em;
+        }
+        .redes{
+            padding: 2em;
+        }
+        .contato-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contato-form label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .contato-form input, .contato-form textarea {
+            width: 100%;
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: 2px solid var(--cor03) ;
+            border-radius: 4px;
+        }
+
+        .contato-form textarea {
+            resize: vertical;
+        }
+
+        .contato-form button {
+            background-color: black; /* Cor do botão */
+            color: #fff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .contato-form button:hover {
+            transition: .3s;
+            background-color: white;
+            color: black;
+        }
+        .third{
+            color: var(--cor02);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav><h1>PORTFFÓLIO</h1></nav>
+        <a href="../index.html" class="first" id="font">Sobre mim</a>
+        <a href="../pages/certificates.html" class="second" id="font">Certificados</a>
+        <a href="../pages/contact.html" class="third" id="font">Contato</a>
+    </header>
+
+    
+
+    <section id="contato">
+        <h2>Entre em Contato Comigo:</h2>
+        <div class="contato-form">
+            <form id="formulario-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit" id="tamanho">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="redes">
+        <h2>Me siga nas Redes Socias <img src="../image/contact.png" alt="contact" class="icon"></h2>
+        <br>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/henrick-brb/"><img src="../image/linkedin.png" alt="Logo Linkedln" class="icon"></a></p>
+        <p>GitHub: <a href="https://github.com/Henrick-Brb"> <img src="../image/github.png" alt="Logo GitHub" class="icon"></a></p>
+        <p>Instagram: <a href="https://www.instagram.com/henrick_borba/"> <img src="../image/instagram.png" alt="Logo Instagram" class="icon"></a></p>
+        <br>
+        <h2>Meu Email:</h2>
+        <p id="E">Henrickborba11@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Henrick de Lima Borba  
+          <img src="../image/html.png" alt="html" class="icon">
+          <img src="../image/css.png" alt="css" class="icon"> 
+          <img src="../image/js.png" alt="javascript" class="icon">
+        </p>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+</html>

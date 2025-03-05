@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontWave';
+  src: url(../fonts/Overwave.otf);
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'fontPro';
+  src: url(../fonts/StretchPro.otf);
+  font-size: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'fontLemon';
+  src: url(../fonts/LEMONMILK-RegularItalic.otf);
+  font-size: normal;
+  font-weight: normal;
+}
+
+:root{
+  --cor01: #ffffff;
+  --cor02: #575669;
+  --cor03: #252330;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+  padding: 0px 5px;
+}
+
+body {
+  font-family: 'fontLemon';
+  background-color: var(--cor03);
+  margin: auto;
+  color: var(--cor01);
+}
+
+header {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0px 30px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.291);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+main{
+  padding: 150px 0px 50px 0px;
+  margin-left:100px ;
+  margin-right: 100px
+}
+
+nav > h1{
+  color: var(--cor01);
+  font-family: 'fontPro';
+  font-size: 2.5em;
+  padding-bottom: 10px;
+}
+
+*#font{
+  font-family: 'fontWave';
+}
+
+header > a{
+  padding: 0px 40px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor01);
+  font-size: 20px;
+  transition: .2s;
+
+}
+
+a:hover {
+  color: var(--cor02);
+  font-size: 24px;
+  transition: .2s;
+}
+
+a#project:hover, a#botao:hover{
+  color: var(--cor03);
+  background-color: var(--cor01);
+  padding: 2px;
+  border-radius: 8px;
+}
+
+section {
+  padding: 2em;
+}
+
+.redes > p#E{
+  padding-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.291);
+}
+
+@media (max-width: 765px) {
+  header {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  header nav h1 {
+    font-size: 2.5em;
+  }
+
+  header a {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  section#sobre{
+    padding: 0px 0px 32px 0px;
+  }
+
+  section#sobre > h2{
+    font-size: 20px;
+  }
+
+  section#sobre > p{
+    font-size: 15px;
+  }
+
+  #projetos, #certificados, #contato {
+    padding: 40px;
+  }
+
+  .projeto, .certificado {
+    padding: 15px;
+    text-align: start;
+  }
+  section#certificados{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  section#certificados > h2{
+    font-size: 20px
+  }
+
+  .certificados-grid {
+    align-items: center;
+  }
+
+  .contato-form input, .contato-form textarea, .contato-form button {
+    width: 100%;
+  }
+
+  button#tamanho{
+    width: 100px;
+  }
+
+  .redes{
+    padding-bottom: 10px;
+  }
+
+  section#responsive{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  footer{
+    padding-bottom: 5px;
+    padding-top: 0px;
+  }
+}
+
+/* Media Queries para telas muito pequenas (ex: celulares antigos) */
+@media (max-width: 475px) {
+  main{
+    margin: 0px 70px;
+  }
+  header {
+    font-size: 14px;
+  }
+  section#contato{
+    padding-top: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  section#contato > h2{
+    font-size: 20px;
+  }
+  
+  section#sobre{
+    padding: 0px 0px 32px 0px;
+  }
+
+  section#sobre > h2{
+    font-size: 20px;
+  }
+
+  section#sobre > p{
+    font-size: 15px;
+  }
+  section#projetos > h2{
+    font-size: 20px;
+  }
+  #projetos, #certificados, #contato {
+      padding: 20px;
+  }
+  section#responsive{
+    padding-bottom: 0px;
+  }
+  .redes > p#E{
+    padding-bottom: 0px;
+  }
+  .redes > h2{
+    font-size: 20px;
+  }
+  section > .redes{
+    padding-bottom: 0px;
+  }
+  .icon {
+      width: 24px;
+      height: 24px;
+  }
+}
